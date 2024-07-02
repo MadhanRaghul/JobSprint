@@ -6,7 +6,7 @@
 
 /* ----------------------------- HOME[APP] ------------------------------- */
 
-.App{
+.Home{
   display: flex;
   flex-direction: column;
   position: relative;
@@ -22,6 +22,11 @@
   z-index: 1;
 }
 
+.Start{
+  position: absolute;
+  z-index: 3;
+}
+
 /* ----------------------------- NAVBAR ------------------------------- */
 
 .Navbar{
@@ -32,6 +37,10 @@
   padding-left: 10%;
   padding-right: 10%;
   width: 80%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  position: fixed;
 }
 
 label{
@@ -87,6 +96,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   width: 100%;
   overflow: hidden;
   height: 100vh;
+  position: relative;
 }
 
 .carousel-slide {
@@ -97,4 +107,50 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
 .carousel-image {
   width: 100%;
   height: auto;
+  filter: blur(5px);
 }
+
+/* ----------------------------- START ------------------------------- */
+
+.Start{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+/* ----------------------------- MAIN ------------------------------- */
+
+.job-container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.find{
+  height: 60vh;
+  width: 50%;
+  background-color: blue;
+  transition: 1s;
+}
+
+.hire{
+  height: 60vh;
+  width: 50%;
+  background-color: red;
+  transition: 1s;
+}
+
+.find:hover{
+  width: 100%;
+}
+
+.hire:hover{
+  width: 100%;
+}
+

@@ -1,12 +1,12 @@
-import Carousel from "./Carousel";
-import Navbar from "./Navbar";
+import Home from "./Home";
+import Main from "./Main";
 
 function App() {
   return (
     <div className="App">
       
-      <Navbar/>
-      <Carousel/>
+      <Home/>
+      <Main/>
 
     </div>
   );
